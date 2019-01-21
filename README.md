@@ -8,5 +8,5 @@ See more on [Medium](https://medium.com/@ejhsu/build-a-monitoring-dashboard-by-p
 
 - run `go get -x -v github.com/golang/dep/cmd/dep` at root folder
 
-- cd to `src/api` and `go dep ensure`
+- cd to `src/api` and run `dep ensure`
 
