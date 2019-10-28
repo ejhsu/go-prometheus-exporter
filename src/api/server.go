@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -31,7 +32,7 @@ func main() {
 	}
 
 	// Handle Metrics endpoint
-	http.Handle(metricsSuffix, prometheus.Handler())
+	http.Handle(metricsSuffix, promhttp.Handler())
 
 	log.SetLevel(log.DebugLevel)
 	log.Debugf("Metrics exported at http://%s%s", listenAddress, metricsSuffix)

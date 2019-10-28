@@ -12,6 +12,10 @@ See more on [Medium](https://medium.com/@ejhsu/build-a-monitoring-dashboard-by-p
 
 - run `go get -x -v github.com/golang/dep/cmd/dep` at root folder
 
+- set GOPATH to root folder `export GOPATH=$(pwd)`
+
+- set PATH to include GOPATH `export PATH=${PATH}:${GOPATH}/bin`
+
 - cd to `src/api` and run `dep ensure`
 
 
